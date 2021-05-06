@@ -1,0 +1,364 @@
+@font-face {
+    font-family: 'HammersmithOne';
+    src: url('polices/HammersmithOne.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url('polices/Montserrat-Light.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('polices/Montserrat-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-color: rgb(237, 240, 242);
+}
+#bloc_page{
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Montserrat-Light', Arial, sans-serif;
+    color: rgb(62, 107, 137);
+    font-size: 10pt;
+    background-color: rgb(245, 245, 245);
+    padding-right: 10px;
+    padding-left: 10px;
+    border: 2px solid rgb(233, 236, 238);
+    
+}
+#bloc_page:hover{
+    margin-top: 10px;
+    box-shadow: 5px 8px 5px rgb(227, 230, 231);
+}
+/*police*/
+h1{
+    color: rgb(0, 74, 173);
+    font-size: 27pt;
+    font-family: 'HammersmithOne', Arial, sans-serif;
+}
+h2{
+    color: rgb(0, 74, 173);
+    font-size: 20pt;
+    font-family: 'HammersmithOne', Arial, sans-serif;
+}
+aside h2{
+    font-size: 18pt;
+}
+header h2{
+    color: rgb(62, 107, 137);
+    font-size: 12pt;
+    font-family: 'Montserrat-Light', Arial, sans-serif;
+}
+header p{
+    color: rgb(62, 107, 137);
+    font-size: 10pt;
+    font-family: 'Montserrat-Light', Arial, sans-serif;
+}
+em{
+    font-style: normal;
+    font-family: 'Montserrat-Regular', Arial, sans-serif;
+}
+figcaption{
+    font-size: 8pt;
+    font-family: 'Montserrat-Light', Arial, sans-serif;
+}
+article span{
+    color: rgb(56, 182, 255);
+    font-size: 9pt;
+    font-family: 'Montserrat-Light', Arial, sans-serif;
+}
+section em{
+    font-family: 'Montserrat-Regular', Arial, sans-serif;
+    font-weight: bold;
+}
+@media all and (max-device-width: 800px){
+    
+    header p{
+        font-size: 8pt;
+    }
+    #bloc_page{
+        font-size: 8pt;
+    }
+}
+/*police*/
+
+/*header*/
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding-top: 5px;
+}
+.bordure{
+    height: 4px;
+    width: 90%;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(56, 182, 255);
+    border-radius: 1em;
+}
+.presentation{
+    width: 75%;
+}
+.presentation h1{
+    padding-top: 10px;
+    margin:0;
+}
+#job{
+    padding-top: 20px;
+    padding-left: 20%;
+    font-weight: bold;
+    margin:0;
+}
+figure{
+    margin:0px;
+}
+.presentation p{
+    text-align: justify;
+    margin:0;
+}
+/*header*/
+
+section{
+    display: flex;
+    margin-top: 20px;
+}
+@media all and (max-device-width: 800px){
+    section{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+} 
+
+/*aside*/
+aside{
+    margin-right: 20px;
+}
+aside ul{
+    list-style: none;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding-left: 15px;
+}
+    /*contact*/
+aside h2{
+    margin:0
+}
+.listMail, .listPhone, .listMap, .itemFormation, .itemLoisirs{
+    display: flex;
+}
+.itemFormation, .itemLoisirs{
+    flex-direction: column;
+}
+.listMail span, .listMap span{
+    padding-top: 14px;
+}
+.map{
+    width: 30px;
+    height: 30px;
+}
+    /*contact*/
+    /*langue*/
+.langue{
+    display: flex;
+    justify-content: space-around;
+}
+.languePercent{
+    padding-top: 12px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+    /*langue*/
+    /*skill*/
+.skill{
+    display: flex;
+    justify-content: space-around;
+}
+.skillPercent{
+    padding-top: 12px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+    /*skill*/
+/*aside*/
+ @media all and (max-device-width: 800px){
+    aside{
+        display: flex;
+        justify-content:space-around;
+        align-content: space-between;
+        flex-wrap: wrap;
+        font-size: 10pt;
+    }
+} 
+
+/*formation*/
+.formation ul{
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+article h2{
+    margin: 0;
+    padding-bottom: 15px;
+}
+article{
+    margin-bottom: 15px;
+}
+    /*experience*/
+.experience{
+    padding-left: 20px;
+}
+.experienceAndProgress{
+    display: flex;
+}
+.experience ul{
+    margin-bottom: 5px;
+}
+.progressXP{
+    height: 335px;
+    width: 4px;
+    border-radius: 1em;
+    background-color: rgb(56, 182, 255);
+    margin-left: 5px;
+}
+.XP1{
+    position: relative;
+    top: -1px;
+    right: 3px;
+    height: 10px;
+    width: 10px;
+    border-radius: 1em;
+    background-color: rgb(62, 107, 137);
+}
+.XP2{
+    position: relative;
+    top: 215px;
+    right: 3px;
+    height: 10px;
+    width: 10px;
+    border-radius: 1em;
+    background-color: rgb(62, 107, 137);
+}
+.XP3{
+    position: relative;
+    top: 305px;
+    right: 3px;
+    height: 10px;
+    width: 10px;
+    border-radius: 1em;
+    background-color: rgb(62, 107, 137);
+}
+@media all and (max-device-width: 800px){
+    .progressXP, .XP1, .XP2, .XP3{
+        all: unset;
+    }
+} 
+    /*experience*/
+    /*etudes*/
+.etudes{
+    padding-left: 30px;
+}
+.experienceAndProgress{
+    display: flex;
+}
+.etudes ul{
+    margin-bottom: 4px;
+}
+.progressEtude{
+    height: 240px;
+    width: 4px;
+    border-radius: 1em;
+    background-color: rgb(56, 182, 255);
+    margin-left: 5px;
+}
+.etude1{
+    position: relative;
+    top: -1px;
+    right: 3px;
+    height: 10px;
+    width: 10px;
+    border-radius: 1em;
+    background-color: rgb(62, 107, 137);
+}
+.etude2{
+    position: relative;
+    top: 88px;
+    right: 3px;
+    height: 10px;
+    width: 10px;
+    border-radius: 1em;
+    background-color: rgb(62, 107, 137);
+}
+.etude3{
+    position: relative;
+    top: 147px;
+    right: 3px;
+    height: 10px;
+    width: 10px;
+    border-radius: 1em;
+    background-color: rgb(62, 107, 137);
+}
+.etude4{
+    position: relative;
+    top: 200px;
+    right: 3px;
+    height: 10px;
+    width: 10px;
+    border-radius: 1em;
+    background-color: rgb(62, 107, 137);
+}
+@media all and (max-device-width: 800px){
+    .progressEtude, .etude1, .etude2, .etude3, .etude4{
+        all: unset;
+    }
+} 
+    /*etudes*/
+/*formation*/
+
+
+/* @media all and (max-device-width: 800px)
+{
+    #bloc_page{
+        width: auto;
+    }
+    h1{
+        color: orange;
+    }
+} */
+
+
+
+
+
+
+ /* article {
+    border: 2px solid red;
+}
+ article ul{
+    border: 2px solid green;
+
+}
+ article h2{
+    border: 2px solid green;
+
+}   */
+/*
+article{
+    border: 2px solid green;
+}
+section{
+    border: 2px solid purple;
+}  */
