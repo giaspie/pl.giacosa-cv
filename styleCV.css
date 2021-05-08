@@ -137,7 +137,7 @@ figure{
         flex-direction: column;
         justify-content: center;
         align-content: center;
-        padding-top: 5px;
+        padding-top: 50px;
     }
     @keyframes bordure{
         from {width: 10%;}
@@ -152,6 +152,7 @@ figure{
         background-color: rgb(56, 182, 255);
         border-radius: 1em;
         animation: bordure 2s;
+        margin-bottom: 50px;
         }
         figure{
             margin: unset;
@@ -161,6 +162,12 @@ figure{
             text-align: center;
             width: unset;
             margin: unset;
+        }
+        .presentation h1{
+            padding-top: 50px;
+        }
+        .presentation p{
+            padding-bottom: 50px;
         }
         #job{
             text-align: center;
@@ -232,12 +239,70 @@ aside h2{
     /*skill*/
 /*aside*/
  @media all and (max-device-width: 800px){
+    /* aside *{
+        border: 2px solid black;
+    } */
     aside{
         display: flex;
-        justify-content:space-around;
-        align-content: space-between;
         flex-wrap: wrap;
-        font-size: 10pt;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    .itemContact ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .itemContact{
+        width: 88%;
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgb(56, 182, 255);
+    }
+    .listPhone, .listMail{
+        width: 300px;
+    }
+    .itemContact li span{
+        font-size: 20px;
+    }
+    .listMap span{
+        font-size: 20px;
+    }
+
+
+
+    .itemLangue, .itemSkill, .itemFormation, .itemLoisirs{
+        padding-top: 25px;
+        width:400px;
+        font-size: 20px;
+    }
+    .itemLangue, .itemFormation{
+        border-right: 1px solid rgb(56, 182, 255);
+    }
+    .itemLangue, .itemSkill{
+        border-bottom: 1px solid rgb(56, 182, 255);
+    }
+    .itemSkill, .itemLoisirs{
+        padding-left: 20px;
+    }
+    .langue, .skill{
+        display: flex;
+        justify-content: unset;
+    }
+    .languePercent{
+        padding-top: 12px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 10px;
+    }
+    .skillPercent{
+        padding-top: 12px;
+        padding-left: 10px;
+        height: 195px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 } 
 
